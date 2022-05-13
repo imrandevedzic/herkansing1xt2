@@ -1,0 +1,359 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body{
+	background: black;
+	background-size: cover;
+}
+
+
+.logo img{
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
+	width: 55%;
+	height: 45%;
+	margin-top: -19%;
+}
+
+.logo figcaption{
+	font-family: Space Mono;
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	margin-top: -22%;
+}
+
+
+
+h1{
+	font-size: 12px;
+	color: white;
+	font-family: Space Mono;
+	padding: 0px 0px 20px 10px;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: auto auto;
+	grid-gap: 20px;
+	align-items: center;
+	padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #B6B5B5;
+  padding: 20px 0;
+  overflow: auto;
+  position: relative;
+}
+
+.distance{
+	grid-column-start: 1;
+ 	grid-column-end: 2;
+ 	margin-top: -45px;
+}
+
+.distance #day{
+	font-size: 12px;
+	color: white;
+	font-family: Space Mono;
+	padding: 0px 0px 20px 10px;
+	text-align: right;
+	padding-right: 10px;
+}
+
+
+.gas{
+	grid-column-start: 1;
+	grid-column-end: 2;
+	max-width: 100%;
+	height: 100%;
+}
+
+.gas canvas{
+	max-width: 300px;
+	height: 240px;
+	margin: auto;
+}
+
+.gas p{
+	text-align: center;
+	color: white;
+	font-family: Space Mono;
+	font-size: 13px;
+	margin-top: -30px;
+}
+.date{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	max-width: 100%;
+	height: 100%;
+}
+
+.date canvas{
+	max-width: 300px;
+	height: 250px;
+	margin: auto;
+}
+.datum{
+	background:  #B6B5B5 ;
+	height: 80px;
+	width: 80%;
+	border-radius: 10px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 10px;
+}
+
+.datum #dag{
+	color: white;
+	font-family: Space Mono;
+	font-size: 11px;
+	text-align: left;
+	padding-top: 10px;
+	padding-left: 10px;
+}
+
+.datum #datum{
+	color: white;
+	font-family: Space Mono;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 5px;
+
+}
+
+.datum #time{
+	color: white;
+	font-family: Space Mono;
+	font-size: 12px;
+	text-align: center;
+	padding-top: 10px;
+}
+
+
+.water{
+	grid-column-start: 1;
+ 	grid-column-end: 3;
+
+}
+
+@media only screen and (min-device-width: 768px){
+
+
+.logo img{
+	width: 45%;
+	height: 35%;
+	margin-top: -19%;
+	
+}
+
+.logo figcaption{
+	font-size: 13px;
+	margin-top: -19%;
+	margin-bottom: 15px;
+}
+
+h1{
+	font-size: 13px;
+}
+
+.datum{
+	height: 90px;
+	width: 85%;
+	margin-top: 7px;
+}
+
+.datum #dag{
+	font-size: 12px;
+}
+
+.datum #datum{
+	font-size: 13px;
+	padding-top: 12px;
+}
+
+.datum #time{
+	font-size: 13px;
+}
+
+.distance #day{
+	font-size: 13px;
+}
+
+.gas canvas{
+	max-width: 300px;
+	height: 240px;
+}
+
+.gas p{
+	font-size: 14px;
+	margin-top: -40px;
+}
+
+.water{
+	grid-column-start: 1;
+ 	grid-column-end: 3;
+
+}
+
+
+}
+
+
+@media screen and (min-width: 1280px){
+
+.logo img{
+	width: 25%;
+	height: 15%;
+	margin-top: -10%;
+}
+
+.logo figcaption{
+	font-size: 13px;
+	margin-top: -10%;
+}
+
+h1{
+	padding-bottom: 30px;
+	padding-top: 10px;
+	font-size: 12px;
+}
+
+.grid-container{
+	display: grid;
+	grid-template-columns: 100px 240px 1fr 1fr 100px;
+	grid-template-rows: 1fr 1fr;
+	grid-gap: 15px;
+  
+}
+
+.grid-container > div {
+  background-color: #B6B5B5;
+  padding: 10px;
+  overflow: auto;
+  position: relative;
+  
+}
+
+
+
+.datum{
+	background: #B6B5B5;
+	height: 80%;
+	width: 80%;
+}
+
+.datum #dag{
+	font-size: 13px;
+	text-align: center;
+	padding-top: 80%;
+}
+
+.datum #datum{
+	font-size: 14px;
+	padding-top: 20%;
+
+}
+
+.datum #time{
+	font-size: 14px;
+}
+
+.distance{
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 1;
+	grid-row-end: 2;
+	margin-top: 0px;
+	
+}
+
+.distance #day{
+	font-size: 13px;
+	padding-right: 10px;
+}
+
+.gas{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 1;
+	grid-row-end: 2;
+}
+
+.gas canvas{
+	min-width: 300px;
+	min-height: 140px;
+	margin-top: 30px;
+}
+
+.gas p{
+	font-size: 14px;
+	margin-top: -40px;
+}
+
+.water{
+	grid-column-start: 4;
+	grid-column-end: 5;
+	grid-row-start: 2;
+	grid-row-end: 3;
+	height: 100%;
+
+}
+
+@media screen and (min-width: 1920px){
+
+
+.logo img{
+	width: 30%;
+	height: 20%;
+	margin-top: -12%;
+}
+
+.logo figcaption{
+	font-size: 14px;
+	margin-top: -12%;
+}
+
+h1{
+	font-size: 15px;
+}
+/
+.grid-container{
+	grid-template-columns: 150px 300px 1fr 1fr 150px;
+}
+
+.datum #dag{
+	font-size: 14px;
+	padding-top: 100%;
+}
+
+.datum #datum, .datum #time{
+	font-size: 15px;
+}
+
+
+.distance #day{
+	font-size: 15px;
+	padding-right: 10px;
+}
+
+.gas canvas{
+	min-width: 500px;
+	min-height: 250px;
+	margin-top: 20px;
+}
+
+.gas p{
+	font-size: 18px;
+	margin-top: -60px;
+}
+
+
+
+

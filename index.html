@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Imran XT2 SpaceX</title>
+		<link rel="stylesheet" type="text/css" href="spacex.css">	
+		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+		<script src="spacex.js" defer></script>
+	</head>
+	<body>
+		<div class="logo">
+			<img src="spacelogo.jpg" alt="SpaceX logo"/>
+			<figcaption>TO INFINITY AND BEYOND</figcaption>
+		</div>
+		<div class="grid-container">		
+			<div class="distance">
+		  		<h1> DISTANCE PER KM</h1>
+				<canvas id="linechart" height="180px"></canvas>
+				<p id="day">Minutes</p>
+		  	</div>
+			<div class="gas">
+				<h1>AMOUNT OF GASOLINE LEFT</h1>	
+  				<canvas id="gasolineChart"></canvas>
+  				<p>33%</p>
+			</div>
+			
+			<div class="date">
+				<h1>TODAY</h1>
+					<div class="datum">
+						<p id="dag">TUESDAY</p>
+						<p id="datum">22/02/2222</p>
+						<p id="time">22:22</p>
+					</div>	
+			</div>
+			<div class="water">
+				<h1>AMOUNT OF WATER OVER THE DAYS</h1>
+				<canvas id="waterchart" height="200"></canvas>
+			</div> 	
+		</div>
+	</body>
+</html>
